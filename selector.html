@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors Demo</title>
+
+    <style>
+        /* 1. Universal Selector */
+        * {
+            font-family: Arial;
+        }
+
+        /* 2. Element Selector */
+        p {
+            color: blue;
+        }
+
+        /* 3. ID Selector */
+        #main-title {
+            color: red;
+        }
+
+        /* 4. Class Selector */
+        .highlight {
+            background-color: yellow;
+        }
+
+        /* 5. Group Selector */
+        h2, h3 {
+            color: green;
+        }
+
+        /* 6. Descendant Selector */
+        .container p {
+            border: 1px solid black;
+        }
+
+        /* 7. Child Selector */
+        .container > p {
+            font-weight: bold;
+        }
+
+        /* 8. Adjacent Sibling */
+        h2 + p {
+            color: orange;
+        }
+
+        /* 9. General Sibling */
+        h2 ~ p {
+            font-style: italic;
+        }
+
+        /* 10. Attribute Selector */
+        input[type="text"] {
+            border: 2px solid blue;
+        }
+
+        /* 11. Attribute Value Selector */
+        a[target="_blank"] {
+            color: purple;
+        }
+
+        /* 12. Hover */
+        a:hover {
+            color: red;
+        }
+
+        /* 13. First Child */
+        li:first-child {
+            color: brown;
+        }
+
+        /* 14. Last Child */
+        li:last-child {
+            color: teal;
+        }
+
+        /* 15. nth-child */
+        li:nth-child(2) {
+            color: gold;
+        }
+
+        /* 16. Pseudo-element */
+        p::first-letter {
+            font-size: 25px;
+        }
+
+        /* 17. Before */
+        p::before {
+            content: "👉 ";
+        }
+
+        /* 18. After */
+        p::after {
+            content: " ✔";
+        }
+
+        /* 19. Not selector */
+        p:not(.highlight) {
+            background-color: lightgray;
+        }
+
+        /* 20. Checked */
+        input:checked {
+            accent-color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="main-title">CSS Selectors Demo</h1>
+
+    <h2>Section Title</h2>
+    <p>This is immediately after h2 (adjacent)</p>
+    <p>This is another paragraph (general sibling)</p>
+
+    <div class="container">
+        <p>Direct child paragraph</p>
+        <div>
+            <p>Nested paragraph inside div</p>
+        </div>
+    </div>
+
+    <p class="highlight">This is highlighted paragraph</p>
+    <p>Normal paragraph</p>
+
+    <a href="#" target="_blank">Open Link</a>
+
+    <br><br>
+
+    <input type="text" placeholder="Enter name">
+    <input type="checkbox" checked> Agree
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+</body>
+</html>
