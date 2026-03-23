@@ -8,6 +8,20 @@ p{
 
 h1{
     text-align: center;
-    color: aqua;
-    
+    color: rgb(201, 255, 6);
+    background: linear-gradient(orange, red);
+
+    font-variant:inherit;
+    letter-spacing: 20px;
+    border-top: 10px;
+    border-bottom: 20px;
+    border:1px solid black;
 }
+
+
+p{
+    border: 10px solid black;
+    border-image: url("hi.jpg") 30 round;
+}
+
+
