@@ -1,20 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <h2></h2>
-    
+    <p id="output"></p>
+    <h2>Welcome</h2>
+
+    <h2>JavaScript Math & Trigonometry Functions</h2>
+
+
 
     <script>
         let a = 10;
         let b = 20;
+
         document.write("the value of a is " + a);
         document.write("<br>");
         document.write("the value of b is " + b);
+
+        let sum = a + b;
+        console.log("the sum of a and b is " + sum);
+
+        document.getElementById("output").innerHTML =
+            "<b>var value a: </b>" + a + "<br>MCA";
+
+        var res = "";
+        res = res + isNaN(123);
+        res = res + isNaN("abc");
+        res = res + isNaN("123abc");
+        res = res + isNaN("123");
+        res = res + isNaN("");
+
+        document.write("<br>" + res);
+
+        var str = "hello";
+        document.write("<br>" + typeof (str));
+
+        // ❌ Fix this (True → true)
+        let bool = true;
+        let undef;
+        let n = null;
+        let f = 20.5;
+
+        // ===============================
+        // ✅ Math Functions
+        // ===============================
+
+        document.write("<h3>Math Functions</h3>");
+
+        document.write("Math.PI: " + Math.PI + "<br>");
+        document.write("Math.sqrt(25): " + Math.sqrt(25) + "<br>");
+        document.write("Math.pow(2,3): " + Math.pow(2, 3) + "<br>");
+        document.write("Math.round(4.6): " + Math.round(4.6) + "<br>");
+        document.write("Math.ceil(4.2): " + Math.ceil(4.2) + "<br>");
+        document.write("Math.floor(4.9): " + Math.floor(4.9) + "<br>");
+        document.write("Math.abs(-10): " + Math.abs(-10) + "<br>");
+        document.write("Math.min(10,5,8): " + Math.min(10, 5, 8) + "<br>");
+        document.write("Math.max(10,5,8): " + Math.max(10, 5, 8) + "<br>");
+        document.write("Math.random(): " + Math.random() + "<br>");
+
+        // ===============================
+        // ✅ Trigonometry Functions
+        // ===============================
+
+        document.write("<h3>Trigonometry Functions</h3>");
+
+        let angle = 30 * (Math.PI / 180); // convert degree → radian
+
+        document.write("sin(30): " + Math.sin(angle) + "<br>");
+        document.write("cos(30): " + Math.cos(angle) + "<br>");
+        document.write("tan(30): " + Math.tan(angle) + "<br>");
+
+
+
+        
+
+        
     </script>
 </body>
+
 </html>
