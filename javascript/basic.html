@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let str = "  Hello World  ";
+document.write("<h3>Original String:</h3>" + str + "<br><br>");
+
+// ===============================
+// 1. Basic Properties
+// ===============================
+document.write("<b>length:</b> " + str.length + "<br>");
+
+
+// ===============================
+// 2. Case Conversion
+// ===============================
+document.write("<b>toUpperCase:</b> " + str.toUpperCase() + "<br>");
+document.write("<b>toLowerCase:</b> " + str.toLowerCase() + "<br>");
+
+
+// ===============================
+// 3. Character Access
+// ===============================
+document.write("<b>charAt(1):</b> " + str.charAt(1) + "<br>");
+document.write("<b>charCodeAt(1):</b> " + str.charCodeAt(1) + "<br>");
+document.write("<b>at(1):</b> " + str.at(1) + "<br>");
+
+
+// ===============================
+// 4. Searching
+// ===============================
+document.write("<b>indexOf('o'):</b> " + str.indexOf("o") + "<br>");
+document.write("<b>lastIndexOf('o'):</b> " + str.lastIndexOf("o") + "<br>");
+document.write("<b>includes('Hello'):</b> " + str.includes("Hello") + "<br>");
+document.write("<b>startsWith('  He'):</b> " + str.startsWith("  He") + "<br>");
+document.write("<b>endsWith('ld  '):</b> " + str.endsWith("ld  ") + "<br>");
+
+
+// ===============================
+// 5. Extracting Strings
+// ===============================
+document.write("<b>slice(2,7):</b> " + str.slice(2,7) + "<br>");
+document.write("<b>substring(2,7):</b> " + str.substring(2,7) + "<br>");
+document.write("<b>substr(2,5):</b> " + str.substr(2,5) + "<br>"); // deprecated but used in exams
+
+
+// ===============================
+// 6. Replacing
+// ===============================
+document.write("<b>replace:</b> " + str.replace("World","JS") + "<br>");
+document.write("<b>replaceAll:</b> " + str.replaceAll("o","0") + "<br>");
+
+
+// ===============================
+// 7. Removing Spaces
+// ===============================
+document.write("<b>trim:</b> '" + str.trim() + "'<br>");
+document.write("<b>trimStart:</b> '" + str.trimStart() + "'<br>");
+document.write("<b>trimEnd:</b> '" + str.trimEnd() + "'<br>");
+
+
+// ===============================
+// 8. Splitting & Joining
+// ===============================
+let arr = str.split(" ");
+document.write("<b>split:</b> " + arr + "<br>");
+
+let joined = arr.join("-");
+document.write("<b>join:</b> " + joined + "<br>");
+
+
+// ===============================
+// 9. Concatenation
+// ===============================
+let str2 = "JavaScript";
+document.write("<b>concat:</b> " + str.concat(" ", str2) + "<br>");
+
+
+// ===============================
+// 10. Repeat & Padding
+// ===============================
+document.write("<b>repeat(2):</b> " + str.repeat(2) + "<br>");
+document.write("<b>padStart:</b> " + "5".padStart(3,"0") + "<br>");
+document.write("<b>padEnd:</b> " + "5".padEnd(3,"0") + "<br>");
+
+
+// ===============================
+// 11. Conversion
+// ===============================
+document.write("<b>toString:</b> " + str.toString() + "<br>");
+document.write("<b>valueOf:</b> " + str.valueOf() + "<br>");
+
+
+// ===============================
+// 12. Template Literals (Modern)
+// ===============================
+let name = "Shridhar";
+document.write(`<b>Template:</b> Hello ${name}<br>`);
+
+</script>
+</body>
+</html>
+
