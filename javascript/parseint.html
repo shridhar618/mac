@@ -8,84 +8,84 @@
 <body>
     <script>
 
-document.write("<h3>parseInt() Examples</h3>");
+        document.write("<h3>parseInt() Examples</h3>");
 
-// ===============================
-// 1. Basic Usage
-// ===============================
-document.write("parseInt('123'): " + parseInt("123") + "<br>");
-document.write("parseInt('10.5'): " + parseInt("10.5") + "<br>"); // removes decimal
-document.write("parseInt('abc'): " + parseInt("abc") + "<br>"); // NaN
-
-
-// ===============================
-// 2. String with Numbers
-// ===============================
-document.write("parseInt('123abc'): " + parseInt("123abc") + "<br>");
-document.write("parseInt('abc123'): " + parseInt("abc123") + "<br>"); // NaN
+        // ===============================
+        // 1. Basic Usage
+        // ===============================
+        document.write("parseInt('123'): " + parseInt("123") + "<br>");
+        document.write("parseInt('10.5'): " + parseInt("10.5") + "<br>"); // removes decimal
+        document.write("parseInt('abc'): " + parseInt("abc") + "<br>"); // NaN
 
 
-// ===============================
-// 3. With Spaces
-// ===============================
-document.write("parseInt('   50'): " + parseInt("   50") + "<br>");
+        // ===============================
+        // 2. String with Numbers
+        // ===============================
+        document.write("parseInt('123abc'): " + parseInt("123abc") + "<br>");
+        document.write("parseInt('abc123'): " + parseInt("abc123") + "<br>"); // NaN
 
 
-// ===============================
-// 4. Negative Numbers
-// ===============================
-document.write("parseInt('-25'): " + parseInt("-25") + "<br>");
+        // ===============================
+        // 3. With Spaces
+        // ===============================
+        document.write("parseInt('   50'): " + parseInt("   50") + "<br>");
 
 
-// ===============================
-// 5. Different Bases (Radix)
-// ===============================
-document.write("parseInt('10', 2): " + parseInt("10", 2) + "<br>"); // binary → 2
-document.write("parseInt('10', 8): " + parseInt("10", 8) + "<br>"); // octal → 8
-document.write("parseInt('10', 10): " + parseInt("10", 10) + "<br>"); // decimal → 10
-document.write("parseInt('10', 16): " + parseInt("10", 16) + "<br>"); // hex → 16
+        // ===============================
+        // 4. Negative Numbers
+        // ===============================
+        document.write("parseInt('-25'): " + parseInt("-25") + "<br>");
 
 
-// ===============================
-// 6. Hexadecimal Input
-// ===============================
-document.write("parseInt('0xF'): " + parseInt("0xF") + "<br>");
+        // ===============================
+        // 5. Different Bases (Radix)
+        // ===============================
+        document.write("parseInt('10', 2): " + parseInt("10", 2) + "<br>"); // binary → 2
+        document.write("parseInt('10', 8): " + parseInt("10", 8) + "<br>"); // octal → 8
+        document.write("parseInt('10', 10): " + parseInt("10", 10) + "<br>"); // decimal → 10
+        document.write("parseInt('10', 16): " + parseInt("10", 16) + "<br>"); // hex → 16
 
 
-// ===============================
-// 7. Float String
-// ===============================
-document.write("parseInt('45.99'): " + parseInt("45.99") + "<br>");
+        // ===============================
+        // 6. Hexadecimal Input
+        // ===============================
+        document.write("parseInt('0xF'): " + parseInt("0xF") + "<br>");
 
 
-// ===============================
-// 8. Empty & Null
-// ===============================
-document.write("parseInt(''): " + parseInt("") + "<br>");
-document.write("parseInt(null): " + parseInt(null) + "<br>");
+        // ===============================
+        // 7. Float String
+        // ===============================
+        document.write("parseInt('45.99'): " + parseInt("45.99") + "<br>");
 
 
-// ===============================
-// 9. Boolean Values
-// ===============================
-document.write("parseInt(true): " + parseInt(true) + "<br>");
-document.write("parseInt(false): " + parseInt(false) + "<br>");
+        // ===============================
+        // 8. Empty & Null
+        // ===============================
+        document.write("parseInt(''): " + parseInt("") + "<br>");
+        document.write("parseInt(null): " + parseInt(null) + "<br>");
 
 
-// ===============================
-// 10. Array Input
-// ===============================
-document.write("parseInt([10]): " + parseInt([10]) + "<br>");
-document.write("parseInt([10,20]): " + parseInt([10,20]) + "<br>");
+        // ===============================
+        // 9. Boolean Values
+        // ===============================
+        document.write("parseInt(true): " + parseInt(true) + "<br>");
+        document.write("parseInt(false): " + parseInt(false) + "<br>");
 
 
-// ===============================
-// 11. Using in Loop
-// ===============================
-document.write("<h4>Loop Example</h4>");
-for(let i = 0; i < 5; i++) {
-    document.write("parseInt('" + i + "') = " + parseInt(i) + "<br>");
-}
+        // ===============================
+        // 10. Array Input
+        // ===============================
+        document.write("parseInt([10]): " + parseInt([10]) + "<br>");
+        document.write("parseInt([10,20]): " + parseInt([10,20]) + "<br>");
+
+
+        // ===============================
+        // 11. Using in Loop
+        // ===============================
+        document.write("<h4>Loop Example</h4>");
+        for(let i = 0; i < 5; i++) {
+            document.write("parseInt('" + i + "') = " + parseInt(i) + "<br>");
+        }
 
 </script>
 </body>
