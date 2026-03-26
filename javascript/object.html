@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="demo1"></p>
+    <script>
+
+        //object literal
+        const fighter={};
+        fighter.firstname="Rani";
+        fighter.lastname="Lakshmibai";
+        fighter.age=29;
+        fighter.country="India";
+
+        document.getElementById("demo1").innerHTML="First Name: "+fighter.firstname+"<br>"+"Last Name: "+fighter.lastname+"<br>"+"Age: "+fighter.age+"<br>"+"Country: "+fighter.country;    
+
+        //object methods
+        const person1={
+            firstname: "Adolf",
+            lastname: "Hitler",
+            id: 5656,
+            fullname: function(){
+                return this.firstname+" "+this.lastname;
+            }
+        };
+    </script>
+
+</body>
+</html>
