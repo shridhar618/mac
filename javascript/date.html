@@ -9,8 +9,18 @@
     <script>
         var myDate = new Date('21-06-2024');
         myDate.setDate(21);
-        myDate.setMonth(5); // month is 0-indexed (0 = January
+        myDate.setMonth(5); 
         myDate.setFullYear(2024);
+        myDate.setHours(19);
+        myDate.setMinutes(30);
+        document.write("Date: " + myDate.getDate() + "<br>");
+        document.write("Month: " + (myDate.getMonth() + 1) + "<br>"); 
+        document.write("Year: " + myDate.getFullYear() + "<br>");
+        document.write("Hours: " + myDate.getHours() + "<br>");
+        document.write("Minutes: " + myDate.getMinutes() + "<br>");
+        document.write("Seconds: " + myDate.getSeconds() + "<br>");
+
+
     </script>
 </body>
 </html>
