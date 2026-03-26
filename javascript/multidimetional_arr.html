@@ -17,6 +17,27 @@
 
         document.write(student[0][0]+" "+student[0][1]+"<br>");
         document.write(student[1][0]+" "+student[1][1]+"<br>");
+
+        var list=["Apple", "Banana", "Cherry"];
+        list.unshift("Mango");
+        document.write("list after unshift:"+list + "<br>");
+
+        list.push(40);
+        document.write("list after push:"+list + "<br>");
+
+        list.pop();
+        document.write("After pop()"+list + "<br>");
+
+        list.shift();
+        document.write("After shift()"+list + "<br>");
+
+        list.sort();
+        document.write("After sort()"+list + "<br>");
+
+        list.reverse();
+        document.write("After reverse()"+list + "<br>");
+
+
     </script>
 </body>
 </html>
