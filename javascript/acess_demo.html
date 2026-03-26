@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Objects Access Demo</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fb;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: left;
+        }
+
+        .box {
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: white;
+            height: 150px;
+        }
+
+        .header-blue {
+            background: linear-gradient(to right, #6ec6ff, #2196f3);
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            padding: 20px;
+        }
+
+        .header-green {
+            background: linear-gradient(to right, #00c853, #00e676);
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            padding: 20px;
+        }
+
+        .content {
+            margin-top: 10px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>JavaScript Objects Access Demo</h1>
+
+    <!-- Object Literal Example -->
+    <div class="box">
+        <div class="header-blue">Object Literal Example</div>
+        <div class="content" id="literal"></div>
+    </div>
+
+    <!-- Object Method Example -->
+    <div class="box">
+        <div class="header-green">Object Method Example</div>
+        <div class="content" id="method"></div>
+    </div>
+
+    <script>
+        // Object Literal
+        let person = {
+            name: "Rani Chennamma",
+            info: "was a freedom fighter from Karnataka of India."
+        };
+
+        document.getElementById("literal").innerHTML =
+            person.name + " " + person.info;
+
+        // Object with Method
+        let user = {
+            firstName: "Adolf",
+            lastName: "Hitler",
+            fullName: function () {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+
+        document.getElementById("method").innerHTML =
+            "Full Name: " + user.fullName();
+    </script>
+
+</body>
+
+</html>
