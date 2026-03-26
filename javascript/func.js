@@ -1,10 +1,10 @@
-function params(a, b){
-    document.write("The value of a is: " + a + "<br>");
+function params(a, b) {
+    console.log("The value of a is: " + a);
 
-    for(let i=0; i<arguments.length; i++){
-        document.write("The value of argument " + i + " is: " + arguments[i] + "<br>");
+    for (let i = 0; i < arguments.length; i++) {
+        console.log("The value of argument " + i + " is: " + arguments[i]);
     }
-    document.write("<br>");
+    console.log("");
 }
 
 // function call
