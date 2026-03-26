@@ -16,6 +16,36 @@
 
         result='3'+undefined;
         console.log(result);
+
+
+        // Explicit conversion
+        result=Number('3')+2;
+        console.log(result);
+
+        result=Number('3')+Number(true);
+        console.log(result);
+
+        result=Number('3')+Number(undefined);
+        console.log(result);
+
+        result=String(3)+2;
+        console.log(result);
+
+        result=String(3)+String(true);
+        console.log(result);
+
+        result=String(3)+String(undefined);
+        console.log(result);
+
+        result=Boolean(3);
+        console.log(result);
+
+        // Implicit conversion
+
+        var str_value=String(value);
+        var num_value=Number(value);
+        var bool_value=Boolean(value);
+
     </script>
 </body>
 </html>
