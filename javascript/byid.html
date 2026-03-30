@@ -8,8 +8,18 @@
 <body>
     <p id="demo">Hello</p>
 
+    <div class="demo"><p>this is a paragraph 1</p></div>
+
+    <div class="demo"><p>this is a paragraph 2</p></div>
+    <p style="color: red;font-size: 40px;">this is a paragraph 3</p>
+
+    <p style="color: rgb(86, 250, 68);font-size: 40px;">this is a paragraph 3</p>
+    
+
     <script>
         document.getElementById("demo").innerHTML="Welcome to JavaScript";
+        const collection = document.getElementsByClassName("demo");
+        collection[1].style.backgroundColor = "yellow";
     </script>
 </body>
 </html>
@@ -46,8 +56,8 @@
     <div class="demo"><p>this is a paragraph 2</p></div>
     
     <script>
-        const collection=document.getElementsByClassName("demo");
-        collection[1].style.backgroundColor="red";
+        const collection = document.getElementsByClassName("demo");
+        collection[1].style.color = "red";
     </script>
  </body>
  </html>
