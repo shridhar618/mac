@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Example 2:mouse hover picture change</h2>
+    <img id="myImage" src="https://www.w3schools.com/js/pic_bulbon.gif" style="width:100px">
+    <script>
+        function mouseOver() {
+            document.getElementById("myImage").src = "https://www.w3schools.com/js/pic_bulboff.gif";
+        }
+        function mouseOut() {
+            document.getElementById("myImage").src = "https://www.w3schools.com/js/pic_bulbon.gif";
+        }
+        document.getElementById("myImage").addEventListener("mouseover", mouseOver);
+        document.getElementById("myImage").addEventListener("mouseout", mouseOut);
+    </script>
+</body>
+</html>
