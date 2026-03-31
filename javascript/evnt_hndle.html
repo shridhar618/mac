@@ -9,9 +9,11 @@
     <input type="text" id="fname" onblur="myFunction()">
     <button onclick="goNext()">Next</button>
 
-    <input type="text" id="fname" onclick="changecolor()">
+    <input type="text" id="fname" onclick="changecolor('red')">
+     <input type="text" id="fname" onmouseover="changecolor('blue')">
+      <input type="text" id="fname" onmouseout="changecolor('white')">
 
-    
+
 
     <script>
         function goNext() {
@@ -23,8 +25,8 @@
             x.value=x.value.toUpperCase();
         }
 
-        function changecolor() {
-            document.getElementById("fname").style.backgroundColor="yellow";
+        function changecolor(code) {
+            document.bgColor=code;
         }
     </script>
 </body>
