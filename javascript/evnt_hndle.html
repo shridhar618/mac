@@ -6,11 +6,25 @@
     <title>Document</title>
 </head>
 <body>
+    <input type="text" id="fname" onblur="myFunction()">
     <button onclick="goNext()">Next</button>
+
+    <input type="text" id="fname" onclick="changecolor()">
+
+    
 
     <script>
         function goNext() {
             window.location.href="func.html";
+        }
+
+        function myFunction() {
+            var x=document.getElementById("fname");
+            x.value=x.value.toUpperCase();
+        }
+
+        function changecolor() {
+            document.getElementById("fname").style.backgroundColor="yellow";
         }
     </script>
 </body>
