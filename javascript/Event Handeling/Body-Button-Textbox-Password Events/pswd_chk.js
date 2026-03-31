@@ -15,7 +15,7 @@ function chkPasswords() {
     sec.focus();
     return false; // Stop submission
   } else {
-    alert("Both passwords are same");
+    alert("Logion Successful");
     return true; // Allow submission
   }
 }
