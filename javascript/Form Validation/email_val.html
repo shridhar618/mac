@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validator</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 100px;
+        }
+        input {
+            padding: 10px;
+            width: 250px;
+        }
+        button {
+            padding: 10px 20px;
+            margin-left: 10px;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Email Validator</h2>
+
+    <input type="text" id="email" placeholder="Enter your email">
+    <button onclick="validateEmail()">Validate</button>
+
+    <p id="result"></p>
+
+    <script>
+        function validateEmail() {
+            let email = document.getElementById("email").value;
+
+            // Regular Expression for email validation
+            let pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            let result = document.getElementById("result");
+
+            if (pattern.test(email)) {
+                result.style.color = "green";
+                result.innerText = "Valid Email ✅";
+            } else {
+                result.style.color = "red";
+                result.innerText = "Invalid Email ❌";
+            }
+        }
+    </script>
+
+</body>
+</html>
