@@ -73,5 +73,17 @@ for (let i in scores){
     console.log(i);
 }
 
+let e = parseInt('111', 2);
+console.log(e); // 7, binary 111 is 7 in decimal
+
+let f = parseInt('1A', 16);
+console.log(f); // 26, hexadecimal 1A is 26 in decimal
+
+let h = 0x10;
+console.log(h); // 16, hexadecimal 10 is 16 in decimal
+
+let simple='This is a template literal';
+console.log(simple);
+
 
 
