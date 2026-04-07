@@ -15,3 +15,7 @@ function fn(a,b,...args){
     console.log(args);
 }
 fn(1,2,3,"a","b",true);
+
+
+//spread operator
+const odd=[1,3,5];
