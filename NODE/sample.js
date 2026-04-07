@@ -113,5 +113,11 @@ let z=score[2];
 console.log(x,y,z); // 90 80 70
 
 
+let person={
+    firstName: "Shridhar",
+    lastName: "Bhat",
+};
 
-
+let fName=person.firstName;
+let lName=person.lastName;
+console.log(fName, lName); // Shridhar Bhat
