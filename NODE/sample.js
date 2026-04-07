@@ -100,3 +100,8 @@ console.log(message);
 //Expressions inside strings
 let m=5, n=3;
 console.log(`Sum is ${m+n}`); // Sum is 8, treated as a template literal
+
+
+function getScores(){
+    return [90, 80, 70, "xyz"];
+}
