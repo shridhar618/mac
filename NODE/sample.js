@@ -51,3 +51,4 @@ function createMachine(name, status){
         status: status
     };
 }
+console.log(createMachine("PES-52", true));
