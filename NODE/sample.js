@@ -57,3 +57,21 @@ const m1 = createMachine("refrigerator", "active");
 const m2 = createMachine("Washing machine", "inactive");
 const s1=createMachine("shridhar", "active");
 console.log(m1 === m2); // false, different objects in memory
+
+
+let scores=[90, 80, 70];
+
+//of in for loop
+for (let score of scores){
+    score=score+5;
+    console.log(score);
+}
+console.log(scores); // original array remains unchanged
+
+//in in for loop
+for (let i in scores){
+    console.log(i);
+}
+
+
+
