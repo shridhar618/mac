@@ -111,3 +111,5 @@ let x=score[0];
 let y=score[1];
 let z=score[2];
 console.log(x,y,z); // 90 80 70
+
+
