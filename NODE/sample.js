@@ -52,3 +52,8 @@ function createMachine(name, status){
     };
 }
 console.log(createMachine("PES-52", true));
+
+const m1 = createMachine("refrigerator", "active");
+const m2 = createMachine("Washing machine", "inactive");
+const s1=createMachine("shridhar", "active");
+console.log(m1 === m2); // false, different objects in memory
