@@ -86,4 +86,17 @@ let simple='This is a template literal';
 console.log(simple);
 
 
+//multiline string
+let multiline=`This is a 
+multiline string`;
+console.log(multiline);
 
+//insert variables using ${};
+let name="Shridhar";
+let message=`Hello, ${name}!`;
+console.log(message);
+
+
+//Expressions inside strings
+let m=5, n=3;
+console.log(`Sum is ${m+n}`); // Sum is 8, treated as a template literal
