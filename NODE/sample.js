@@ -42,3 +42,12 @@ console.log(combined3);
 const original=[1,2,3];
 const copy=[...original];
 console.log(copy);
+
+
+//object literals
+function createMachine(name, status){
+    return {
+        name: name, 
+        status: status
+    };
+}
