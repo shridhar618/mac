@@ -23,3 +23,22 @@ const combined=[2,4,6,...odd];
 console.log(combined);
 const combined2=[...odd,2,4,6];
 console.log(combined2);
+
+
+function sum(a,b,c){
+    console.log(a+b+c);
+}
+
+const numbers=[10,20,30];
+sum(...numbers);
+
+
+const a=[1,2,3];
+const b=[4,5,6];
+const combined3=[...a,...b];
+console.log(combined3);
+
+
+const original=[1,2,3];
+const copy=[...original];
+console.log(copy);
