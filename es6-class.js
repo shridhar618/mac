@@ -29,3 +29,9 @@ class Student
 
     }
 }
+
+let p=new Person("Shridhar");
+console.log(p); // Shridhar
+
+let person3=new Student("  Shridhar Bhat  ");
+console.log(person3.getName()); // SHRIDHAR BHAT
