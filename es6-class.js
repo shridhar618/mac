@@ -7,3 +7,25 @@ Person.prototype.getName=function()
 };
 const person1=new Person("Shridhar");
 console.log(person1.getName()); // Shridhar
+
+
+
+class Student
+{
+    constructor(name){
+        this.name=name;
+    }
+    getName()
+    {
+        return this.name.toUpperCase();
+    }
+    setName(newName){
+        newName=newName.trim();
+        if(newName==='')
+        {
+            throw "Name cannot be empty";
+        }
+        this.name=newName;
+
+    }
+}
