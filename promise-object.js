@@ -64,3 +64,17 @@ const people = [
 ];
 
 console.log(sortByAge(people));
+
+
+function isStorngPassword(password) {
+    const hasUpperCase = /[A-Z]/.test(password);
+    const hasLowerCase = /[a-z]/.test(password);
+    const hasNumbers = /\d/.test(password);
+    const hasSpecialChars = /[!@#$%^&*(),.?":{}|<>]/.test(password);
+    const isLongEnough = password.length >= 8;
+
+    return hasUpperCase && hasLowerCase && hasNumbers && hasSpecialChars && isLongEnough;
+}
+
+console.log(isStorngPassword('P@ssw0rd')); // Output: true
+console.log(isStorngPassword('password')); // Output: false
