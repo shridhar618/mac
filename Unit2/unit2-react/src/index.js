@@ -4,9 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const myElement = <h1>I like JSX!</h1>;  // ✅ declare first
+const x = 5;
+let text = "Good Bye";
+
+if (x < 10) {
+  text = "Hello from react";
+}
+
+const myElement2 = <h1>{text}</h1>;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(myElement);  // ✅ now it's safe
+root.render(myElement2);
 
 reportWebVitals();
