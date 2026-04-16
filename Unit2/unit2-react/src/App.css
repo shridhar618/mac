@@ -44,3 +44,11 @@ h2{
 h1{
   color: rgb(143, 55, 163);
 }
+
+input{
+  padding: 5px;
+  border-radius: 30%;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background: transparent;
+}
