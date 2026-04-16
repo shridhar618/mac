@@ -2,24 +2,24 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  let a = 10, b = 20;
+
   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
-    <h1>React is {5+5} times better with JSX</h1>
+    <div className='App-header'> 
+      <h1>React is 30 times better than JSX</h1>
+      <ul>
+        <li>Apples</li>
+        <li>Bananas</li>
+        <li>Cherries</li>
+      </ul>
+
+      <p>End to the list</p>
+
+      <label>Event Name:</label>
+      <input type="text" id="event-name" className='color'/>
+
+      <h2>Sum is {a + b}</h2>
+    </div>
   );
 }
 
