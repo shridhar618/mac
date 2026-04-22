@@ -1,6 +1,6 @@
 import "./App.css";
 import React from "react";
-import Book from "./components/Book";
+import Book from "./components/BookClass";
 // import BookClass from "./components/BookClass";
 
 function App() {
