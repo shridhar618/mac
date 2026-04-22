@@ -1,4 +1,4 @@
-// import "./App.css";
+import "./App.css";
 import React from "react";
 import Book from "./components/Book";
 // import BookClass from "./components/BookClass";
@@ -13,6 +13,13 @@ function App() {
                 title="React Basics"
                 author="John Doe"
                 price={2999}
+            />
+
+            {/* <BookClass /> */}
+            <Book 
+                title="Javascript Essencials"
+                author="Shridhar Bhat"
+                price={9999}
             />
         </div>
     );
