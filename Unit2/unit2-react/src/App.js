@@ -106,7 +106,7 @@
 
 
 import React from "react";
-import BookTable from "./BookTable"; 
+import BookTable from "./components/BookTable";
 function App() {
   return (
     <div>
