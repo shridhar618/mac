@@ -6,7 +6,7 @@ const books = [
     isbn: "978-0131103627",
     title: "The C Programming Language",
     author: "Dennis Ritchie",
-    price: 599,
+    price: 599, 
     published: new Date("1978-02-22")
   },
   {

@@ -106,11 +106,11 @@
 
 
 import React from "react";
-import BookTable from "./components/BookTable";
+import CounterClass from "./components/CounterClass";
 function App() {
   return (
     <div>
-      <BookTable />
+      <CounterClass />
     </div>
   );
 }
