@@ -4,7 +4,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 // import Greeting from './GreetingFn';  
 // import App1 from './App';
-import AppState from './App_State ';
+import AppState from './App_State';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -18,4 +18,4 @@ root.render(
   // </React.StrictMode>
 );
 
-reportWebVitals();
+reportWebVitals()
