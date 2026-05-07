@@ -1,26 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 
-function CountryFilter() {
+function CountryFilter({ onFilter }) {
+
+    const [searchTerm, setSearchTerm] = useState("");
+
+    const handleFilter = (e) => {
+        setSearchTerm(e.target.value);
+        onFilter(e.target.value);
+    };
 
     return (
-        <div>
+
+        <div className="bottom-links">
+
             <h2>Filter Countries</h2>
 
             <input
                 type="text"
-                placeholder="Search Country"
+                placeholder="Search Country Name..."
+                value={searchTerm}
+                onChange={handleFilter}
             />
 
-            <br /><br />
-
-            <select>
-                <option>All</option>
-                <option>Asia</option>
-                <option>Europe</option>
-                <option>North America</option>
-                <option>Africa</option>
-            </select>
         </div>
+
     );
 }
 

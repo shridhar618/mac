@@ -1,38 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
 
-function CountryAdd() {
+function CountryAdd({ onAdd }) {
+
+    const [country, setCountry] = useState("");
+    const [capital, setCapital] = useState("");
+    const [population, setPopulation] = useState("");
+
+    const handleAdd = () => {
+        if (country && capital && population) {
+            onAdd({ country, capital, population });
+            setCountry("");
+            setCapital("");
+            setPopulation("");
+        } else {
+            alert("Please fill all fields");
+        }
+    };
 
     return (
-        <div>
+
+        <div className="bottom-links">
+
             <h2>Add Country</h2>
 
-            <form>
-                <input
-                    type="text"
-                    placeholder="Enter Country Name"
-                />
+            <input
+                type="text"
+                placeholder="Country Name"
+                value={country}
+                onChange={(e) => setCountry(e.target.value)}
+            />
 
-                <br /><br />
+            <input
+                type="text"
+                placeholder="Capital"
+                value={capital}
+                onChange={(e) => setCapital(e.target.value)}
+            />
 
-                <input
-                    type="text"
-                    placeholder="Enter Capital"
-                />
+            <input
+                type="text"
+                placeholder="Population"
+                value={population}
+                onChange={(e) => setPopulation(e.target.value)}
+            />
 
-                <br /><br />
+            <button onClick={handleAdd}>Add Country</button>
 
-                <input
-                    type="text"
-                    placeholder="Enter Population"
-                />
-
-                <br /><br />
-
-                <button type="submit">
-                    Add Country
-                </button>
-            </form>
         </div>
+
     );
 }
 

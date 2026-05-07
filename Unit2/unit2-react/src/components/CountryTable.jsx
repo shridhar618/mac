@@ -1,54 +1,41 @@
 import React from "react";
 
-function CountryTable() {
-
-    const countries = [
-        {
-            id: 1,
-            name: "India",
-            capital: "New Delhi",
-            population: "1.4 Billion"
-        },
-        {
-            id: 2,
-            name: "USA",
-            capital: "Washington D.C",
-            population: "331 Million"
-        },
-        {
-            id: 3,
-            name: "Japan",
-            capital: "Tokyo",
-            population: "125 Million"
-        }
-    ];
+function CountryTable({ countries }) {
 
     return (
-        <div>
-            <h2>Country List</h2>
 
-            <table border="1" cellPadding="10">
+        <div>
+
+            <table border="1">
+
                 <thead>
                     <tr>
                         <th>ID</th>
                         <th>Country</th>
-                        <th>Capital</th>
                         <th>Population</th>
+                        <th>Created</th>
                     </tr>
                 </thead>
 
                 <tbody>
-                    {countries.map((country) => (
-                        <tr key={country.id}>
-                            <td>{country.id}</td>
-                            <td>{country.name}</td>
-                            <td>{country.capital}</td>
-                            <td>{country.population}</td>
+
+                    {countries.map((item) => (
+
+                        <tr key={item.id}>
+                            <td>{item.id}</td>
+                            <td>{item.country}</td>
+                            <td>{item.population}</td>
+                            <td>{new Date().toDateString()}</td>
                         </tr>
+
                     ))}
+
                 </tbody>
+
             </table>
+
         </div>
+
     );
 }
 
